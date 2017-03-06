@@ -13,3 +13,30 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
+task verb << {
+    bootRun { systemProperty "spring.profiles.active", "verb" }
+}
+
+task noun << {
+    bootRun { systemProperty "spring.profiles.active", "noun" }
+}
+
+task subject << {
+    bootRun { systemProperty "spring.profiles.active", "subject" }
+}
+
+task article << {
+    bootRun { systemProperty "spring.profiles.active", "article" }
+}
+
+task adjective << {
+    bootRun { systemProperty "spring.profiles.active", "adjective" }
+}
+
+bootRun.mustRunAfter verb
+bootRun.mustRunAfter noun
+bootRun.mustRunAfter subject
+bootRun.mustRunAfter article
+bootRun.mustRunAfter adjective
+
+
