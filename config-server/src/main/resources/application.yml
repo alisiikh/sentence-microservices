@@ -3,6 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/alisiikh/lucky-config
+          uri: https://github.com/alisiikh/sentence-microservices
+          search-paths: configuration/
 server:
   port: 8001
