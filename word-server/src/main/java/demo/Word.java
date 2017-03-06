@@ -5,14 +5,9 @@ package demo;
  */
 public class Word {
 
-	public String word;
+	private String word;
 
-	public Word() {
-		super();
-	}	
-	
 	public Word(String word) {
-		this();
 		this.word = word;
 	}
 
@@ -23,6 +18,4 @@ public class Word {
 	public void setWord(String word) {
 		this.word = word;
 	}
-	
-	
 }
