@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/alisiikh/lucky-config
+server:
+  port: 8001
